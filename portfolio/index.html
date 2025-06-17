@@ -1,63 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shivam Singh Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #222;
+      color: white;
+    }
+
+    .navbar h1 {
+      font-size: 28px;
+    }
+
+    .navlinks {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .navlinks a, .navlinks h3, .navlinks h4 {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .navlinks a:hover {
+      color: #00ffff;
+    }
+
+    .section {
+      padding: 40px 60px;
+    }
+
+    .section h2 {
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .project-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+    }
+
+    .project-details {
+      max-width: 60%;
+    }
+
+    .project-details h2 {
+      color: #007acc;
+    }
+
+    .project-details button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .project-details button:hover {
+      background-color: #005fa3;
+    }
+
+    .project-image img {
+      border-radius: 10px;
+      height: 130px;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .service-card {
+      flex: 1 1 300px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .service-card h3 {
+      color: #007acc;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .project-container {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .project-details, .project-image {
+        max-width: 100%;
+      }
+
+      .services {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="navbar" style="display: flex; justify-content: space-around; align-items: center;">
-        <h1>Shivam Singh</h1>
-        <div class="navlinks" >
-            <h2 style="display: flex; justify-content: space-between;""><a href="https://dependrasingh027.netlify.app/">My Portfolio</a></h2>
-        <h4>My projects</h4>
-        <h3>My assignments</h3>
-        </div>
+
+  <div class="navbar">
+    <h1>Shivam Singh</h1>
+    <div class="navlinks">
+      <a href="https://dependrasingh027.netlify.app/">My Portfolio</a>
+      <h4>My Projects</h4>
+      <h3>My Assignments</h3>
     </div>
+  </div>
 
-    <div>
-
-    <h2> My project</h2>
-
-    <div style="display: flex; justify-content: space-between;">
-        <div class="project-details" style=" height: 200px;">
-            <h2>Project Details</h2>
-            <p>This is my project</p>
-            <button>click here to see</button>
-        </div>
-        <div>
-            <img src="https://avatars.githubusercontent.com/u/127205626?v=4" alt="My Photo" style="height: 130px;">
-        </div>
+  <div class="section">
+    <h2>My Project</h2>
+    <div class="project-container">
+      <div class="project-details">
+        <h2>Project Details</h2>
+        <p>This is my project. It includes modern web features and responsive design.</p>
+        <button>Click here to see</button>
+      </div>
+      <div class="project-image">
+        <img src="https://avatars.githubusercontent.com/u/127205626?v=4" alt="My Photo">
+      </div>
     </div>
+  </div>
 
-</div>
-    <div>
-
-        <h2> Services</h2>
-
-        <div>
-
-            <h3>Web Development</h3>
-            <p>We provide web development services to create stunning websites.</p>
-
-        </div>
-
-        <div>
-
-            <h3>App Development</h3>
-            <p>We create mobile applications for both Android and iOS platforms.</p>
-
-        </div>
-
-
-        <div>
-
-            <h3>SEO Services</h3>
-            <p>We offer SEO services to improve your website's visibility on search engines.</p>
-
-        </div>
-
+  <div class="section">
+    <h2>Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Web Development</h3>
+        <p>We provide web development services to create stunning websites.</p>
+      </div>
+      <div class="service-card">
+        <h3>App Development</h3>
+        <p>We create mobile applications for both Android and iOS platforms.</p>
+      </div>
+      <div class="service-card">
+        <h3>SEO Services</h3>
+        <p>We offer SEO services to improve your website's visibility on search engines.</p>
+      </div>
     </div>
+  </div>
+
 </body>
 </html>
